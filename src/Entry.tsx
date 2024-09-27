@@ -12,9 +12,8 @@ import App from './components/App';
 
 const StoresProvider = ({ children }: { children: (stores: any) => JSX.Element }) => {
     const utilityStore = useUtilityStore();
-    return children({utilityStore});
+    return children({ utilityStore });
 };
-
 
 const Entry = () => {
     return (
@@ -22,12 +21,7 @@ const Entry = () => {
             <StoresProvider>
                 {(stores) => (
                     <Providers path={false}>
-                        {() => (
-                            <>
-                                <Navbar />
-                                <App stores={stores} />
-                            </>
-                        )}
+                        {() => <App stores={stores} />}
                     </Providers>
                 )}
             </StoresProvider>
