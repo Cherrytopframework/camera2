@@ -41,7 +41,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({ template: './public/index.html' }),
         new ModuleFederationPlugin({
-            name: 'aichat',
+            name: 'camera',
             filename: "remoteEntry.js",
             remotes: {
                 // import cherrytopframework
