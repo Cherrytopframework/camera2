@@ -1,3 +1,5 @@
+// @ts-ignore
+import RemoteApp from 'mf2/App';
 import './App.css';
 
 const App = (
@@ -11,7 +13,7 @@ const App = (
         <p>Start building amazing things with Rsbuild.</p>
         <h1>SmartCamera mfe</h1>
         <p>SmartCamera</p>
-        
+        <RemoteApp />
     </div>
 );
 
