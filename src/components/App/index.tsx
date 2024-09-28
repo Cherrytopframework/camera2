@@ -10,10 +10,10 @@ const App = (
     <div className="content">
         <AdvancedCamera
             stores={stores}
-            handleCameraClick={() => console.log("handleCameraClick")}
-            handleRecordClick={() => console.log("handleRecordClick")}
-            handleSettingsClick={() => console.log("handleSettingsClick")}
-            handleEnvironmentClick={() => console.log("handleEnvironmentClick")}
+            handleCameraClick={() => console.logs("handleCameraClick")}
+            handleRecordClick={() => console.logs("handleRecordClick")}
+            handleSettingsClick={() => console.logs("handleSettingsClick")}
+            handleEnvironmentClick={() => console.logs("handleEnvironmentClick")}
         />
         <div>Smarticamera2 mfv 0.0.2 copyright 2024</div>
     </div>
